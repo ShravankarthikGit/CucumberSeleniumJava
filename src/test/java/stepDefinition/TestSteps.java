@@ -13,6 +13,7 @@ public class TestSteps {
 
 	@Given("^User is on homepage$")
 	public void user_is_on_homepage() throws Throwable {
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.aa.com");
