@@ -1,15 +1,17 @@
 package cucumberTest;
- 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
- 
+
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "CucumberSeleniumJava\\Feature\\login.feature", // Ensure this path is correct
+    features = "src/test/resources/features", // Ensure this path is correct
     glue = {"stepDefinition"},
     plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
-public class runtestJUnit {
-    // This class remains empty
+
+public class RunLoginTest {
+
+	
 }
